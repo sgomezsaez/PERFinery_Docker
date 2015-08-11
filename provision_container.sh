@@ -29,7 +29,7 @@ else
 	else
     		echo "-->Docker not installed"
 		echo "-->Installing Docker Engine"
-		sudo apt-get update $ sudo apt-get install wget
+		sudo apt-get update && sudo apt-get install wget
 		wget -qO- https://get.docker.com/ | sh
 		if which docker >/dev/null; then
 			echo "-->Docker installed correctly"
